@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Álvaro Huertas García – PhD AI/ML Engineer & Bioinformatics Specialist">
-    <title>Álvaro Huertas García | AI engineer & Bioinformatician</title>
+    <meta name="description" content="Álvaro Huertas García – PhD AI & Bioinformatics Scientist">
+    <title>Álvaro Huertas García | AI & Bioinformatics Scientist</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,13 +12,12 @@
 <header>
     <nav>
         <div class="container">
-            <h1 class="logo">Álvaro Huertas García</h1>
+            <h1 class="logo">Álvaro Huertas</h1>
             <ul class="nav-links">
+                <li><a href="#tracks">Tracks</a></li>
                 <li><a href="#about">Profile</a></li>
-                <li><a href="#skills">Expertise</a></li>
-                <li><a href="#bioinformatics">Bioinformatics</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -31,75 +30,82 @@
 <section id="hero">
     <div class="container">
         <div class="hero-content">
-            <h2>AI/ML Scientist & Bioinformatics Specialist (PhD)</h2>
+            <h2>AI / ML Scientist & Bioinformatics Specialist (PhD)</h2>
             <p class="tagline">
                 Generative AI · LLMs · Omics · Translational Genomics · MLOps
             </p>
             <p class="hero-description">
                 PhD in Artificial Intelligence and Computer Science with 5+ years of experience
-                building end-to-end AI and bioinformatics systems. Specialized in applying machine
-                learning and generative AI to genomics, multi-omics, healthcare, and regulated
-                biomedical environments.
-            </p>
-            <a href="#projects" class="cta-button">Selected Work</a>
-        </div>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-    <div class="container">
-        <h2>Profile</h2>
-        <div class="about-content">
-            <p>
-                I am an AI/ML Scientist and Bioinformatician with a PhD in Computational Science.
-                My work sits at the intersection of artificial intelligence, genomics, and
-                translational medicine, combining statistical modeling, machine learning, and
-                scalable data engineering.
-            </p>
-            <p>
-                I have extensive experience working with high-dimensional omics data, clinical
-                pipelines, and large-scale ML systems in regulated environments, delivering
-                explainable, reproducible, and production-ready solutions.
+                building end-to-end AI and bioinformatics systems for healthcare, genomics,
+                cybersecurity, and industrial environments.
             </p>
         </div>
     </div>
 </section>
 
-<!-- CORE EXPERTISE -->
-<section id="skills">
+<!-- TRACK SELECTOR -->
+<section id="tracks">
     <div class="container">
-        <h2>Core Expertise</h2>
+        <h2>Select Focus</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>AI & Generative AI Track</h3>
+                <p>
+                    Large Language Models, NLP, anomaly detection, explainable AI and
+                    production-grade MLOps systems in regulated environments.
+                </p>
+                <a href="#ai-track" class="cta-button">View AI Track</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Bioinformatics & Genomics Track</h3>
+                <p>
+                    Translational genomics, multi-omics integration, NGS pipelines and
+                    machine learning for clinical diagnostics.
+                </p>
+                <a href="#bio-track" class="cta-button">View Bioinformatics Track</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- AI TRACK -->
+<section id="ai-track">
+    <div class="container">
+        <h2>AI & Generative AI</h2>
 
         <div class="skills-grid">
 
             <div class="skill-card">
-                <h3>Artificial Intelligence</h3>
+                <h3>Core AI</h3>
                 <ul>
                     <li>Transformers, LLMs, RAG, Mamba</li>
-                    <li>Computer Vision (CNNs, CLIP, Diffusion)</li>
+                    <li>NLP, Semantic Search, Adversarial NLP</li>
                     <li>Anomaly Detection & Time Series</li>
-                    <li>XGBoost & Tabular ML</li>
+                    <li>Computer Vision (CNNs, Diffusion, CLIP)</li>
                 </ul>
             </div>
 
             <div class="skill-card">
-                <h3>Generative AI & NLP</h3>
-                <ul>
-                    <li>HuggingFace, LangChain, LlamaIndex</li>
-                    <li>Embeddings & Semantic Search</li>
-                    <li>Text Classification & Adversarial NLP</li>
-                    <li>Agent-based Workflows</li>
-                </ul>
-            </div>
-
-            <div class="skill-card">
-                <h3>MLOps & Infrastructure</h3>
+                <h3>MLOps & Deployment</h3>
                 <ul>
                     <li>Docker, MLflow, FastAPI</li>
                     <li>AWS (Batch, Lambda, S3, EC2)</li>
-                    <li>CI/CD, Monitoring (Grafana, Prometheus)</li>
-                    <li>ONNX, Experiment Tracking (W&B)</li>
+                    <li>Monitoring: Grafana, Prometheus</li>
+                    <li>ONNX, CI/CD, Experiment Tracking</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Responsible AI</h3>
+                <ul>
+                    <li>Explainability (SHAP, LIME)</li>
+                    <li>Robustness & Adversarial Evaluation</li>
+                    <li>Fairness & Model Governance</li>
+                    <li>Regulated Environments</li>
                 </ul>
             </div>
 
@@ -107,60 +113,50 @@
     </div>
 </section>
 
-<!-- BIOINFORMATICS -->
-<section id="bioinformatics">
+<!-- BIO TRACK -->
+<section id="bio-track">
     <div class="container">
         <h2>Bioinformatics & Genomics</h2>
 
         <div class="skills-grid">
 
             <div class="skill-card">
-                <h3>Translational & Clinical Genomics</h3>
+                <h3>Translational Genomics</h3>
                 <ul>
-                    <li>Biomarker Discovery & Disease Association</li>
+                    <li>Biomarker Discovery</li>
+                    <li>Disease Association Studies</li>
                     <li>Clinical Genomics & Diagnostics</li>
-                    <li>Integrative Multi-Omics Data Fusion</li>
-                    <li>Latent Representation Learning</li>
+                    <li>Multi-Omics Integration</li>
                 </ul>
             </div>
 
             <div class="skill-card">
                 <h3>NGS & Epigenomics</h3>
                 <ul>
-                    <li>Illumina & Oxford Nanopore Sequencing</li>
+                    <li>Illumina & Oxford Nanopore</li>
                     <li>Methylation & Epigenomic Analysis</li>
                     <li>Short- & Long-Read Pipelines</li>
-                    <li>Quality Control & Validation</li>
+                    <li>QC & Validation</li>
                 </ul>
             </div>
 
             <div class="skill-card">
-                <h3>Systems Biology</h3>
-                <ul>
-                    <li>Biological Networks & Pathway Analysis</li>
-                    <li>Protein–Protein Interaction Graphs</li>
-                    <li>Graph-based Modeling</li>
-                    <li>Network Topology & Inference</li>
-                </ul>
-            </div>
-
-            <div class="skill-card">
-                <h3>Pipelines, Statistics & HPC</h3>
+                <h3>Pipelines & HPC</h3>
                 <ul>
                     <li>Nextflow Workflow Design</li>
-                    <li>Docker & Singularity Reproducibility</li>
-                    <li>Linear, Mixed & Bayesian Models</li>
-                    <li>HPC Parallelization & GPU Acceleration</li>
+                    <li>Docker & Singularity</li>
+                    <li>AWS Batch & Cloud Pipelines</li>
+                    <li>Parallelization & GPU Acceleration</li>
                 </ul>
             </div>
 
             <div class="skill-card">
-                <h3>Bioinformatics Tooling</h3>
+                <h3>Statistics & ML for Omics</h3>
                 <ul>
-                    <li>Bioconductor (DESeq2, edgeR)</li>
-                    <li>Single-cell: Seurat, Scanpy</li>
-                    <li>Visualization: ggplot2, Plotly</li>
-                    <li>ML for Omics (Feature Selection, Clustering)</li>
+                    <li>Linear, Mixed & Bayesian Models</li>
+                    <li>Feature Selection & Clustering</li>
+                    <li>Deep Learning for Omics</li>
+                    <li>Biological Networks</li>
                 </ul>
             </div>
 
@@ -176,69 +172,19 @@
         <div class="project-card">
             <h3>Bioinformatician & Biostatistical Analyst – Universal Diagnostics (UDX)</h3>
             <p>
-                Applying multi-omics, NGS-based bioinformatics and machine learning to early cancer
-                detection. Designing reproducible Nextflow pipelines, statistical models, and
-                cloud-deployed workflows supporting clinical diagnostic products.
+                Development of multi-omics and NGS pipelines for early cancer detection,
+                integrating statistical modeling, machine learning and cloud-deployed workflows
+                to support clinical diagnostic products.
             </p>
         </div>
 
         <div class="project-card">
             <h3>Senior Artificial Intelligence Researcher – FUNDITEC</h3>
             <p>
-                Led AI work packages in national and European projects, developing explainable and
-                robust ML systems for industrial anomaly detection, cybersecurity, and
-                misinformation analysis.
+                Led AI work packages in European projects, delivering explainable and
+                production-ready AI systems for cybersecurity, industrial anomaly detection,
+                and misinformation analysis.
             </p>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-    <div class="container">
-        <h2>Selected Projects</h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <h3>Epigenetics for Cancer Diagnosis</h3>
-                <p>
-                    Integrative bioinformatics and ML pipelines for colorectal cancer detection
-                    using epigenomic and multi-omics data in clinical workflows.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">Omics</span>
-                    <span class="tech-tag">Clinical AI</span>
-                    <span class="tech-tag">Nextflow</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>OncoSimulR (Bioconductor)</h3>
-                <p>
-                    Forward genetic simulation of cancer progression with epistasis, contributing
-                    to open-source bioinformatics tooling.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">R</span>
-                    <span class="tech-tag">Systems Biology</span>
-                    <span class="tech-tag">Simulation</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>LLM-powered Clinical Decision Support</h3>
-                <p>
-                    Agent-based workflows combining LLMs and structured biomedical data to
-                    support decision-making in regulated healthcare contexts.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">LLMs</span>
-                    <span class="tech-tag">RAG</span>
-                    <span class="tech-tag">Healthcare AI</span>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
@@ -249,7 +195,7 @@
         <h2>Contact</h2>
         <div class="contact-content">
             <p>
-                Open to senior AI, bioinformatics, and computational biology roles in industry or research.
+                Open to senior AI, bioinformatics, and computational biology roles.
             </p>
             <div class="contact-links">
                 <a href="https://github.com/Huertas97" target="_blank" class="contact-link">GitHub</a>
